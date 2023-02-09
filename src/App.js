@@ -4,13 +4,13 @@ import axios from "axios"
 
 function App() {
 
-  const getMovies = async () => {
-    const res = await axios.get("http://localhost:4000/");
+  const getAllMovies = async () => {
+    const res = await axios.get("http://localhost:5000/api/movies");
     console.log(res);
   }
 
   useEffect(() => {
-    getMovies()
+    getAllMovies()
 
 
   }, [])
